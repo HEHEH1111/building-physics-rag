@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "description": "词法检索的同义词扩展与领域门控配置。可直接编辑本文件增删词条，无需改代码；修改后重启服务生效。",
+  "synonym_groups": [
+    ["吸水系数", "毛细吸水系数", "毛细吸水", "吸水率", "water absorption coefficient", "capillary absorption coefficient", "water uptake"],
+    ["含湿量", "含水率", "物料含湿量", "moisture content", "water content"],
+    ["等温吸湿", "吸附等温线", "吸湿曲线", "sorption isotherm", "sorption"],
+    ["水蒸气渗透率", "透湿", "蒸汽渗透率", "water vapor permeability", "vapor permeability", "vapour permeability"],
+    ["湿阻因子", "水蒸气扩散阻力因子", "vapor diffusion resistance factor"],
+    ["导热系数", "热导率", "thermal conductivity"],
+    ["热湿耦合", "热湿传递", "湿传递", "热湿", "combined heat and moisture", "heat and moisture transport", "hamt", "moisture transport"],
+    ["多孔介质", "多孔材料", "porous media", "porous medium", "porous material"],
+    ["地表温度", "地温", "地面温度", "土壤温度", "ground temperature", "ground surface temperature", "groundsurfaces"],
+    ["毛细吸水实验", "杯法", "capillary absorption test", "cup method", "cup test"],
+    ["相对湿度", "relative humidity"],
+    ["湿扩散", "moisture diffusivity"],
+    ["比热容", "specific heat"],
+    ["边界条件", "boundary conditions", "boundary condition"],
+    ["辐射制冷", "radiative cooling"],
+    ["传热", "heat transfer"],
+    ["传质", "mass transfer"],
+    ["蒸发", "evaporation"],
+    ["干燥", "drying"],
+    ["液态水传输", "liquid transport"],
+    ["含湿量基准", "质量基准", "体积基准", "mass basis", "volume basis"]
+  ],
+  "domain_terms": [
+    "建筑物理", "暖通", "围护结构", "墙体", "屋面", "材料", "物性", "手册", "文档", "章节", "页码",
+    "实验", "试验", "试件", "测量", "测试", "步骤", "方法", "计算", "拟合", "参数", "字段", "对象",
+    "模拟", "仿真", "模型", "公式", "方程", "单位", "曲线", "图表", "温度", "湿度", "系数", "渗透",
+    "吸湿", "吸水", "导热", "传热", "传质", "扩散", "毛细", "凝结", "结露", "热湿", "湿热",
+    "边界条件", "独立变量", "适用条件", "等温", "含湿", "孔隙", "水蒸气", "冷凝", "蒸发", "干燥"
+  ],
+  "english_domain_terms": [
+    "sorption", "isotherm", "moisture", "hygrothermal", "permeability", "thermal", "conductivity",
+    "humidity", "porous", "capillary", "energyplus", "comsol", "idf", "hamt", "simulation",
+    "boundary", "coefficient", "diffusivity", "evaporation", "material", "vapor", "vapour",
+    "absorption", "diffusion", "temperature", "transfer", "transport", "schedule", "surface",
+    "reference", "documentation", "module", "physics", "units", "parameter", "field"
+  ],
+  "software_terms": [
+    "comsol", "energyplus", "ep", "e+", "idf", "hamt", "multiphysics", "实验", "实验书", "手册", "文档", "knowledge"
+  ],
+  "strong_domain_terms": [
+    "comsol", "energyplus", "hamt", "sorption", "围护结构", "传热", "传质", "吸水系数", "含湿量",
+    "导热系数", "等温吸湿", "多孔介质", "boundary condition", "idf", "手册", "文档", "物性"
+  ],
+  "invalid_patterns": [
+    "(今天|明天|昨天|今日|明日|现在)(的)?(天气|气温|温度多少|会不会下雨)",
+    "天气预报", "外面(天气|下雨|冷不冷)", "(几点|几号|星期几|哪一年|今年是哪年)",
+    "(新闻|股市|股价|基金|彩票|汇率|油价|快递|外卖|菜谱|食谱|电影|歌曲|歌词|笑话|脑筋急转弯)",
+    "(帮我写|写一篇|写一首|翻译一下|算一下|讲个|唱首|画一张|生成图片)",
+    "(你是谁|你叫什么|你好啊|在吗|chatgpt|gpt|大模型是什么)"
+  ],
+  "chitchat_patterns": [
+    "^(你好|hi|hello|hey|在吗|谢谢|thanks|再见|拜拜)[\\s!！?？。.,，]*$"
+  ]
+}

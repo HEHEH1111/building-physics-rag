@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+*.sqlite*
+*.pdf
+*.gguf
+page_images/
+answer-model/
+answer-runtime/
+translation-model/
+translator_lib/
+资料路径.json
+private-docs/
+.env*
